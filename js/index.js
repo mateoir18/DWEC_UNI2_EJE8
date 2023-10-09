@@ -20,11 +20,10 @@ function borrarUsuario(usuarios){
 }
 
 function mostrarUsuarios(usuarios){
-    usuarios.forEach(function(value, key) {
+    for (let [key, value] of usuarios) {
         alert(`Usuario: ${key}, Contraseña: ${value}`);
-    });
+    }
 }
-
 
 function menu(){
     var usuarios = new Map();
